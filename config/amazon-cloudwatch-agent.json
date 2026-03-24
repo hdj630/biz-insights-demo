@@ -1,10 +1,21 @@
 {
-  "traces": {
-    "traces_collected": {
-      "otlp": {
-        "grpc_endpoint": "127.0.0.1:4315",
-        "http_endpoint": "127.0.0.1:4316"
-      }
+    "agent": {
+        "debug": true,
+        "region": "us-west-2"
+    },
+    "traces": {
+        "traces_collected": {
+            "application_signals": {}
+        },
+        "endpoint_override": "https://alpha.us-west-2.xray.cloudwatch.aws.dev"
+    },
+    "logs": {
+        "metrics_collected": {
+            "application_signals": {},
+            "otlp": {
+                "grpc_endpoint": "0.0.0.0:4317",
+                "http_endpoint": "0.0.0.0:4318"
+            }
+        }
     }
-  }
 }
