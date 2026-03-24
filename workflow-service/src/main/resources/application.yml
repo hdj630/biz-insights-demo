@@ -1,0 +1,7 @@
+server:
+  port: ${STAGE_PORT:8080}
+
+stage:
+  name: ${STAGE_NAME:unknown}
+  next-url: ${NEXT_STAGE_URL:}
+  cancel-url: ${CANCEL_STAGE_URL:}
